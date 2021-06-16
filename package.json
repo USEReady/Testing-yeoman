@@ -1,6 +1,6 @@
 {
-  "name": "generator-react-tableau",
-  "version": "1.0.0",
+  "name": "generator-tableau-reactjs",
+  "version": "1.1.0",
   "description": "Its extension part write in reactjs for tableau",
   "homepage": "index.html",
   "author": {
@@ -11,8 +11,8 @@
   "files": [
     "generators"
   ],
-  "main": "generators/index.js",
-  "bin": "generators/index.js",
+  "main": "generators/app/index.js",
+  "bin": "generators/app/index.js",
   "keywords": [
     "React",
     "Tableau"
