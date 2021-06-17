@@ -6,13 +6,13 @@
   "author": {
     "name": "useready",
     "email": "kirank@useready.com",
-    "url": ""
+    "url": "https://github.com/USEReady/Testing-yeoman.git"
   },
   "files": [
     "generators"
   ],
-  "main": "generators/app/index.js",
-  "bin": "generators/app/index.js",
+  "main": "app/index.js",
+  "bin": "app/index.js",
   "keywords": [
     "React",
     "Tableau"
@@ -75,6 +75,6 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "https://github.com/USEReady/Testing-yeoman.git",
+  "repository": "USEReady/Testing-yeoman",
   "license": "MIT"
 }

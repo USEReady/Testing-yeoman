@@ -24,6 +24,10 @@ module.exports = class extends Generator {
     this.destinationRoot(this.destinationPath(this.props.name));
   }
   writing() {
+    mkdirp('public');
+    mkdirp('src');
+    mkdirp('SSL');
+    mkdirp('SSL/fiscloudservice');
     // this.fs.copy(
     //   this.templatePath('dummyfile.txt'),
     //   this.destinationPath('dummyfile.txt')
@@ -32,7 +36,7 @@ module.exports = class extends Generator {
   // this.fs.copy(this.templatePath('.*'), this.destinationPath());
   this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
   this.fs.copy(this.templatePath('public'), this.destinationPath('public'));
-this.fs.copy(this.templatePath('build'), this.destinationPath('build'));
+//this.fs.copy(this.templatePath('build'), this.destinationPath('build'));
 this.fs.copy(this.templatePath('SSL'), this.destinationPath('SSL'));
   this.fs.copyTpl(
     this.templatePath('package.json'),
