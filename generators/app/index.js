@@ -11,7 +11,6 @@ module.exports = class extends Generator {
         name: "name",
         message: "Your project name",
         default: "generated-app"
-
       }
     ];
 
@@ -25,12 +24,12 @@ module.exports = class extends Generator {
     this.destinationRoot(this.destinationPath(this.props.name));
   }
   writing() {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
-    this.fs.copy(this.templatePath('*'), this.destinationPath());
-  this.fs.copy(this.templatePath('.*'), this.destinationPath());
+    // this.fs.copy(
+    //   this.templatePath('dummyfile.txt'),
+    //   this.destinationPath('dummyfile.txt')
+    // );
+  //   this.fs.copy(this.templatePath('*'), this.destinationPath());
+  // this.fs.copy(this.templatePath('.*'), this.destinationPath());
   this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
   this.fs.copy(this.templatePath('public'), this.destinationPath('public'));
 this.fs.copy(this.templatePath('build'), this.destinationPath('build'));
