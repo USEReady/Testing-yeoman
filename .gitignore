@@ -1,0 +1,3 @@
+node_modules
+coverage
+/usr/local/lib/node_modules/generator-next/generators/app/templates/
