@@ -39,7 +39,7 @@ module.exports = class extends Generator {
 //this.fs.copy(this.templatePath('build'), this.destinationPath('build'));
 this.fs.copy(this.templatePath('SSL'), this.destinationPath('SSL'));
   this.fs.copyTpl(this.templatePath('package.json'),this.destinationPath('package.json'),this.props);
-  this.fs.copyTpl(this.templatePath('server.json'),this.destinationPath('server.json'),this.props);
+  this.fs.copyTpl(this.templatePath('server.js'),this.destinationPath('server.js'),this.props);
   }
 
   install() {
